@@ -16,8 +16,8 @@
 		FE1A777716B047D900D1FDA0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FE1A777616B047D900D1FDA0 /* Default.png */; };
 		FE1A777916B047D900D1FDA0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FE1A777816B047D900D1FDA0 /* Default@2x.png */; };
 		FE1A777B16B047D900D1FDA0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FE1A777A16B047D900D1FDA0 /* Default-568h@2x.png */; };
-		FE1A777E16B047D900D1FDA0 /* APViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1A777D16B047D900D1FDA0 /* APViewController.m */; };
-		FE1A778116B047D900D1FDA0 /* APViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE1A777F16B047D900D1FDA0 /* APViewController.xib */; };
+		FE1A777E16B047D900D1FDA0 /* APDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1A777D16B047D900D1FDA0 /* APDemoViewController.m */; };
+		FE1A778916B0481600D1FDA0 /* APScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1A778816B0481600D1FDA0 /* APScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,9 +34,10 @@
 		FE1A777616B047D900D1FDA0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		FE1A777816B047D900D1FDA0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		FE1A777A16B047D900D1FDA0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		FE1A777C16B047D900D1FDA0 /* APViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APViewController.h; sourceTree = "<group>"; };
-		FE1A777D16B047D900D1FDA0 /* APViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APViewController.m; sourceTree = "<group>"; };
-		FE1A778016B047D900D1FDA0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/APViewController.xib; sourceTree = "<group>"; };
+		FE1A777C16B047D900D1FDA0 /* APDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APDemoViewController.h; sourceTree = "<group>"; };
+		FE1A777D16B047D900D1FDA0 /* APDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APDemoViewController.m; sourceTree = "<group>"; };
+		FE1A778716B0481600D1FDA0 /* APScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APScrollView.h; sourceTree = "<group>"; };
+		FE1A778816B0481600D1FDA0 /* APScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,10 +86,11 @@
 			children = (
 				FE1A777316B047D900D1FDA0 /* APAppDelegate.h */,
 				FE1A777416B047D900D1FDA0 /* APAppDelegate.m */,
-				FE1A777C16B047D900D1FDA0 /* APViewController.h */,
-				FE1A777D16B047D900D1FDA0 /* APViewController.m */,
-				FE1A777F16B047D900D1FDA0 /* APViewController.xib */,
+				FE1A777C16B047D900D1FDA0 /* APDemoViewController.h */,
+				FE1A777D16B047D900D1FDA0 /* APDemoViewController.m */,
 				FE1A776B16B047D900D1FDA0 /* Supporting Files */,
+				FE1A778716B0481600D1FDA0 /* APScrollView.h */,
+				FE1A778816B0481600D1FDA0 /* APScrollView.m */,
 			);
 			path = APExtendedScrollView;
 			sourceTree = "<group>";
@@ -163,7 +165,6 @@
 				FE1A777716B047D900D1FDA0 /* Default.png in Resources */,
 				FE1A777916B047D900D1FDA0 /* Default@2x.png in Resources */,
 				FE1A777B16B047D900D1FDA0 /* Default-568h@2x.png in Resources */,
-				FE1A778116B047D900D1FDA0 /* APViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +177,8 @@
 			files = (
 				FE1A777116B047D900D1FDA0 /* main.m in Sources */,
 				FE1A777516B047D900D1FDA0 /* APAppDelegate.m in Sources */,
-				FE1A777E16B047D900D1FDA0 /* APViewController.m in Sources */,
+				FE1A777E16B047D900D1FDA0 /* APDemoViewController.m in Sources */,
+				FE1A778916B0481600D1FDA0 /* APScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,14 +191,6 @@
 				FE1A776E16B047D900D1FDA0 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		FE1A777F16B047D900D1FDA0 /* APViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FE1A778016B047D900D1FDA0 /* en */,
-			);
-			name = APViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -258,6 +252,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "APExtendedScrollView/APExtendedScrollView-Prefix.pch";
 				INFOPLIST_FILE = "APExtendedScrollView/APExtendedScrollView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -269,6 +264,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "APExtendedScrollView/APExtendedScrollView-Prefix.pch";
 				INFOPLIST_FILE = "APExtendedScrollView/APExtendedScrollView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -293,6 +289,7 @@
 				FE1A778616B047D900D1FDA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

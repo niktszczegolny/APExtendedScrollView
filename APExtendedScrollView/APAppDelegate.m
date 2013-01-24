@@ -8,7 +8,7 @@
 
 #import "APAppDelegate.h"
 
-#import "APViewController.h"
+#import "APDemoViewController.h"
 
 @implementation APAppDelegate
 
@@ -16,7 +16,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[APViewController alloc] initWithNibName:@"APViewController" bundle:nil];
+    self.viewController = [[APDemoViewController alloc] init];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;

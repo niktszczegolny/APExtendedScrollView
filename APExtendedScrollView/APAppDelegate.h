@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class APViewController;
+@class APDemoViewController;
 
 @interface APAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) APViewController *viewController;
+@property (strong, nonatomic) APDemoViewController *viewController;
 
 @end
