@@ -31,7 +31,7 @@
         [self _setShowsPageControl:NO];
     }
     
-    _statusBarPageControl.currentPage = contentOffset.x / (self.frame.size.width);
+    _statusBarPageControl.currentPage = (contentOffset.x + (self.frame.size.width / 2)) / (self.frame.size.width);
 }
 
 #pragma mark - Private methods
