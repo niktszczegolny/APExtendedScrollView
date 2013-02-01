@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface APScrollView : UIScrollView {
-    UIPageControl   *_statusBarPageControl;
+    UIPageControl           * _statusBarPageControl;
+    UIInterfaceOrientation    _lastOrientation;
 }
 
 @end
