@@ -14,6 +14,8 @@
     [super layoutSubviews];
     
     if (!_statusBarPageControl) {
+        _lastOrientation = [[UIApplication sharedApplication] statusBarOrientation];
+        
         _statusBarPageControl = [[UIPageControl alloc] initWithFrame:[[UIApplication sharedApplication] statusBarFrame]];
         _statusBarPageControl.numberOfPages = (self.contentSize.width / self.frame.size.width);
         _statusBarPageControl.backgroundColor = [UIColor clearColor];
@@ -37,6 +39,12 @@
 #pragma mark - Private methods
 
 - (void)_setShowsPageControl: (BOOL)show {
+    
+    if (_lastOrientation != [[UIApplication sharedApplication] statusBarOrientation]) {
+        _statusBarPageControl.transform = CGAffineTransformMakeRotation(UIInterfaceOrientationIsLandscape([[UIApplication sharedApplication] statusBarOrientation]) ? M_PI_2 : 0);
+        _statusBarPageControl.frame = [[UIApplication sharedApplication] statusBarFrame];
+        _lastOrientation = [[UIApplication sharedApplication] statusBarOrientation];
+    }
     
     [UIView animateWithDuration:.4 animations:^{
         [[UIApplication sharedApplication] setStatusBarHidden:show withAnimation:UIStatusBarAnimationFade];
